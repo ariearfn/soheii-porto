@@ -1,7 +1,7 @@
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
-  modules: ['shadcn-nuxt', '@vercel/analytics'],
+  modules: ['shadcn-nuxt', '@vercel/analytics', '@vercel/speed-insights'],
 
   shadcn: {
     prefix: '',
