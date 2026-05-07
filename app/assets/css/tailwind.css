@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'Sora', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --color-background: #0a0a0b;
+  --color-foreground: #f0f0f2;
+  --color-card: #161618;
+  --color-card-foreground: #f0f0f2;
+  --color-popover: #161618;
+  --color-popover-foreground: #f0f0f2;
+  --color-primary: #3bf78e;
+  --color-primary-foreground: #0a0a0b;
+  --color-secondary: #1e1e21;
+  --color-secondary-foreground: #f0f0f2;
+  --color-muted: #111113;
+  --color-muted-foreground: #8a8a96;
+  --color-accent: #1e1e21;
+  --color-accent-foreground: #f0f0f2;
+  --color-destructive: #ff4444;
+  --color-destructive-foreground: #f0f0f2;
+  --color-border: #222225;
+  --color-input: #222225;
+  --color-ring: #3bf78e;
+  --color-chart-1: #3bf78e;
+  --color-chart-2: #3bf78e;
+  --color-chart-3: #ff8c42;
+  --color-chart-4: #42a5f5;
+  --color-chart-5: #42a5f5;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  --color-sidebar-background: #0a0a0b;
+  --color-sidebar-foreground: #8a8a96;
+  --color-sidebar-primary: #3bf78e;
+  --color-sidebar-primary-foreground: #0a0a0b;
+  --color-sidebar-accent: #111113;
+  --color-sidebar-accent-foreground: #f0f0f2;
+  --color-sidebar-border: #222225;
+  --color-sidebar-ring: #3bf78e;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #222225 #0a0a0b;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  ::selection {
+    background: #3bf78e;
+    color: #0a0a0b;
+  }
+}
