@@ -32,7 +32,7 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
     :class="scrolled ? 'bg-background/80 backdrop-blur-xl border-b shadow-sm' : 'bg-transparent'"
   >
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <span class="font-mono text-sm font-bold tracking-wider text-primary">arie.dev</span>
+      <span class="font-mono text-sm font-bold tracking-wider text-primary">soheii.space</span>
 
       <!-- Desktop -->
       <ul class="hidden md:flex items-center gap-8">

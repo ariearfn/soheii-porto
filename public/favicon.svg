@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#12121a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3af78e"/>
+      <stop offset="100%" stop-color="#2bc46f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect width="512" height="512" rx="96" ry="96" fill="url(#bg)"/>
+
+  <!-- Clean geometric "S" for soheii -->
+  <path d="
+    M 328 152
+    C 316 112, 280 88, 240 88
+    C 188 88, 144 124, 144 172
+    C 144 220, 180 244, 232 268
+    L 280 292
+    C 332 316, 368 344, 368 396
+    C 368 444, 324 476, 272 476
+    C 220 476, 184 448, 172 408
+  " fill="none" stroke="url(#accent)" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Dot accent top-right -->
+  <circle cx="352" cy="128" r="14" fill="#3af78e" opacity="0.35"/>
+
+  <!-- Dot accent bottom-left -->
+  <circle cx="160" cy="440" r="14" fill="#2bc46f" opacity="0.35"/>
+</svg>
